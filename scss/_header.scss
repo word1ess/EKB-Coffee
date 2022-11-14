@@ -1,0 +1,168 @@
+@import "_variable.scss";
+
+// .nav {
+//     background: #000;
+//     color: $primary;
+//     padding: 44px 0;
+
+//     &__row {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 0 10px;
+//         opacity: 0;
+//         transition: all 400ms ease-in 0ms;
+//         &._active{
+//             opacity: 1;
+//         }
+//     }
+
+//     &__links {
+
+//         & a, button {
+//             font-family: $mulish;
+//             text-transform: uppercase;
+//             font-size: 1.15rem;
+//             color: $primary;
+//             margin: 0px 36px 0px 0px;
+//             transition: ease 100ms;
+//             border: none;
+//             background: none;
+
+//             &:hover{
+//                 color: $orange;
+//             }
+//         }
+//     }
+
+//     &__soc {
+//         width: 168px;
+//         position: relative;
+//         text-align: center;
+
+//         & p{
+//             line-height: 20px;
+//         }
+//     }
+//     &__icons {
+//         margin: 0px 0px 10px 0px;
+
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             width: 2px;
+//             height: 100%;
+//             background: #aaaaaa;
+//             left: 150%;
+//         }
+//     }
+// }
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000; 
+        z-index: 2;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 100px;
+        padding: 0 30px;
+    }
+
+    &__logo {
+        transition: ease 100ms;
+        position: relative;
+        z-index: 3;
+        & a {
+            color: $primary;
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: 0.75px;
+            &::after{
+                content: '';
+                position: absolute;
+                background: #fff;
+                width: 100%;
+                height: 2px;
+                bottom: -2px;
+                left: 0;
+            }
+        }
+    
+        & a:hover{
+            color: $orange;
+            &::after{
+                display: none;
+            }
+        }
+    } 
+
+    &__burger {
+        display: none;
+        &.burger-active::before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &.burger-active::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        &.burger-active span{
+            display: none;
+        }
+    }
+
+    &__menu {
+        padding: 12px 0 0 0;
+    }
+
+    &__soc{
+        width: 168px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        z-index: 2;
+        & p{
+            line-height: 20px;
+        }
+        &-small{
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__link{
+        font-family: $mulish;
+        text-transform: uppercase;
+        font-size: 1.15rem;
+        color: $primary;
+        margin: 0px 25px 0px 0px;
+        transition: ease 100ms;
+        border: none;
+        background: none;
+
+        &:hover{
+            color: $orange;
+        }        
+    }
+}

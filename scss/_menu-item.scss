@@ -1,0 +1,51 @@
+.coffee {
+    padding: 150px 0 0 0;
+    &__row {
+        display: flex;
+    }
+
+    &__img {
+        flex: 0 1 50%;
+        padding-right: 30px;
+        & img{
+            max-width: 1200px;
+        }
+    }
+
+    &__content {
+        flex: 1 1 50%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    &__header {
+        font-size: 64px;
+        color: $orange;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-size: 20px;
+        color: $secondary;
+        margin-bottom: 50px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+
+    &__table {
+        font-size: 20px;
+        margin-bottom: 50px;
+
+        & table{
+            position: relative;
+            width: 100%;
+            & td{
+                padding: 15px 10px; 
+                text-align: left; 
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+@import "_header.scss", "_main.scss", "_footer.scss", "_null.scss",  "_slider.scss", "_menu.scss", "_menu-item.scss", "_gallery.scss", "_about.scss", "_contacts.scss", "_book.scss", "_adaptive.scss";
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Crimson+Pro&family=Handlee&family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat&family=Parisienne&display=swap");
+
+body{
+    font-family: $mulish;
+    margin: 0;
+}
+//оболочка страницы
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+//контент самой страницы(без footer и header)
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+//ограниивающий контейнер
+.container {
+    max-width: 1728px;
+    margin: 0 auto;
+    z-index: 1000;
+    height: 100%;
+}
+
+.text{
+    color: $secondary;
+}
+.title{
+    color: $primary;
+}
+.link{
+    color: #848484;
+    &:hover{
+        color: #fff;
+    }
+}
+.logo{
+    position: relative;
+    max-width: 111px;
+    & a{
+        color: $primary;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0.75px;
+        transition: ease 100ms;
+        &::after{
+            content: '';
+            position: absolute;
+            background: #fff;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+        }
+    }
+    & a:hover{
+        color: $orange;
+        &::after{
+           display: none;
+        }
+    }
+}
+.btn-white{
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: $primary;
+    padding: 25px 30px;
+    border: 4px solid $primary;
+    border-radius: 60px;
+    font-weight: 900;
+    transition: ease 250ms;
+    z-index: 4;
+    &:hover{
+        color: black;
+        background-color: $primary;
+    }
+}
+
+.btn__orange {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: $primary;
+    padding: 30px 70px;
+    background: $orange;
+    border: 4px solid $orange;
+    border-radius: 60px;
+    font-weight: 900;
+    transition: ease 250ms;
+    z-index: 4;
+    // box-shadow: 1px 1px 10px 10px #EAEAEA;
+    &:hover{
+        color: $orange;
+        background-color: transparent;
+        // border: 4px solid $primary;
+    }
+}
+
+
+//стили для анимаации карточек
+.card {
+    background-color: rgb(70, 70, 70);
+    &__cards {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: ease 1s;
+        z-index: 0;
+
+        & img{
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title{
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 100;
+    }
+}
+
+//Время для анимации блоков
+.one{
+    transition: all 800ms ease 0ms;   
+};
+.two{
+    transition: all 800ms ease 100ms; 
+}
+.three{
+    transition: all 800ms ease 200ms; 
+}
+.four{
+    transition: all 800ms ease 300ms;
+}
+.five{
+    transition: all 800ms ease 400ms;
+}
+.six{
+    transition: all 800ms ease 500ms;
+}
+.seven{
+    transition: all 800ms ease 600ms;
+}
+.eight{
+    transition: all 800ms ease 700ms;
+}
+
+//стили для интро в галлереии и о нас
+.intro{
+    display: flex;
+    position: relative;
+    height: 500px;
+    padding: 100px 0 0 0;
+    & img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 4;
+    }
+    &__title {
+        font-size: 64px;
+        font-weight: 900;
+        text-transform: uppercase;
+        z-index: 4;
+        transition: all 400ms ease-in 0ms;
+        text-align: center;
+	}
+    
+}
+

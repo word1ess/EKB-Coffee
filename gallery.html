@@ -1,0 +1,448 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Галерея</title>
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+</head>
+<!-- Отображаемое тело страницы -->
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__logo">
+						<a href="../EKB-Coffee/index.html">Coffee</a>
+					</div>
+					<div class="header__soc header__soc-big">
+						<p>Екатеринбург Вайнера <br />
+						тц. пассаж этаж 4 <br />
+						07:30 - 21:00</p>
+					</div>
+					<div class="header__burger">
+						<span>
+
+						</span>
+					</div>
+					<nav class="header__menu">
+						<div class="header__soc header__soc-small">
+							<p>Екатеринбург Вайнера <br />
+							тц. пассаж этаж 4 <br />
+							07:30 - 21:00</p>
+						</div>
+						<ul class="header__list">
+							<li>
+								<a href="../EKB-Coffee/menu.html" class="header__link">меню</a>
+							</li>
+							<li>
+								<a href="../EKB-Coffee/gallery.html" class="header__link">галерея</a>
+							</li>
+							<li>
+								<a href="../EKB-Coffee/about.html" class="header__link">о нас</a>
+							</li>
+							<li>
+								<a href="../EKB-Coffee/contacts.html" class="header__link">контакты</a>
+							</li>
+							<li>
+								<a href="../EKB-Coffee/book.html" class="header__link">забронировать</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+            <div class="intro">
+                <div class="gallery__intro">
+                    <img src="../EKB-Coffee/img/gallery-intro.webp" alt="">
+                </div>
+                <div class="gallery__intro__row intro__row">
+                    <h2 class="intro__title title two animItems">галерея</h2>
+                </div>
+            </div>
+            <div class="tabs__gallery">
+                <div class="container">
+                    <div class="tabs__row">
+                        <div class="tabs__nav">
+                            <a class="tabs__nav-btn one animItems active" data-tab="#tab_1">все категории</a>
+                            <a class="tabs__nav-btn two animItems" data-tab="#tab_2">кофе</a>
+                            <a class="tabs__nav-btn three animItems" data-tab="#tab_3">торты</a>
+                            <a class="tabs__nav-btn four animItems" data-tab="#tab_4">пироги</a>
+                            <a class="tabs__nav-btn five animItems" data-tab="#tab_5">десерты</a>
+                            <a class="tabs__nav-btn six animItems" data-tab="#tab_6">интерьер</a>
+                        </div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__item active" id="tab_1">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/espresso-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>Эспрессо</h3>
+                                        <p>кофе</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/capuchino-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/latte-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/cacao-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/cocktail-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/black-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/juice-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/ice-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/cake-1.webp" alt="cake-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/cake-2.webp" alt="cake-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/pie-1.webp" alt="pie-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/pie-2.webp" alt="pie-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-1.webp" alt="desert-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-2.webp" alt="desert-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-3.webp" alt="desert-3">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/interior-1.webp" alt="interior-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab_2">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/espresso-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/capuchino-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/latte-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/cacao-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/cocktail-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/black-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/juice-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/menu/ice-small.webp" alt="">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab_3">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/cake-1.webp" alt="cake-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/cake-2.webp" alt="cake-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab_4">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/pie-1.webp" alt="pie-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/pie-2.webp" alt="pie-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab_5">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-1.webp" alt="desert-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-2.webp" alt="desert-2">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/desert-3.webp" alt="desert-3">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab_6">
+                            <div class="tabs__img ">
+                                <img src="../EKB-Coffee/img/tabs/interior-1.webp" alt="interior-1">
+                                <div class="tabs__hover">
+                                    <div class="tabs__inner">
+                                        <h3>название</h3>
+                                        <p>категория</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__logo"> 						
+						<div class="logo">
+							<a href="">Coffee</a>
+						</div>
+					</div>
+					<div class="footer__geo block__item">
+						<div class="footer__title title block__title">Coffe</div>
+						<div class="block__text">
+							<p class="footer__text text">Екатеринбург ул. Вайнера <br /> тц. Пассаж <br /> этаж 4</p>
+							<p class="footer__title title"> Без перерывов и выходных <br /> 07:00 - 21:00</p>
+							<p class="footer__text text">Ⓒ 2022 Coffee All rights reserved</p>
+						</div>
+					</div>
+					<div class="footer__tel block__item">
+						<div class="footer__title title block__title">Связаться с нами</div>
+						<div class="block__text">
+							<div class="footer__phone">
+								<img src="../EKB-Coffee/img/icons/phone.svg" alt="phone">
+								<p class="text">8 900 800 70 60</p>
+							</div>
+							<div class="footer__phone">
+								<img src="../EKB-Coffee/img/icons/mail.svg" alt="mail">
+								<p class="text">bestcoffee@gmail.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__contact block__item">
+						<div class="footer__url-header footer__title title block__title">Ссылки</div>
+						<div class="block__text">
+							<div class="footer__url-text">
+								<a href="../EKB-Coffee/index.html" class="text link">Главная</a>
+								<a href="../EKB-Coffee/menu.html" class="text link">Меню</a>
+								<a href="../EKB-Coffee/about.html" class="text link">О нас</a>
+								<a href="../EKB-Coffee/news.html" class="text link">Новости</a>
+								<a href="../EKB-Coffee/gallery.html" class="text link">Галерея</a>
+								<a href="../EKB-Coffee/contacts.html" class="text link">Контакты</a>
+								<a href="../EKB-Coffee/book.html" class="text link">Забронировать</a>
+							</div>
+							<div class="footer__social">
+								<p class="footer__title title">Наши социальные сети</p>
+								<div class="footer__social__row">
+									<a href="" class="link fa-brands fa-vk"></a>
+									<a href="" class="link fa-brands fa-youtube"></a>
+									<a href="" class="link fa-brands fa-instagram"></a>
+									<a href="" class="link fa-brands fa-telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/cdd40c5823.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>

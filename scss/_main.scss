@@ -1,0 +1,106 @@
+@import "_variable.scss", "_animations.scss";
+
+// @keyframes hoverGray{
+//     0%{
+//         filter: grayscale(100%);
+//     }
+//     50%{
+//         filter: grayscale(50%);
+//         scale: (1.1);
+//     }
+//     100%{
+//         filter: grayscale(0%);
+//         scale: (1.2);
+//     }
+// }
+
+.book {
+    padding: 62px 264px 48px 264px;
+    background: #fff;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__form {
+        width: 100%;
+        margin-bottom: 35px;
+        & form{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        & input{
+            width: 360px;
+            height: 60px;
+            background: $primary;
+            font-size: 16px;
+            color: $secondary;
+            padding: 20px;
+            border: none;
+            outline: none;
+            box-shadow: 1px 1px 10px 10px #EAEAEA;
+            transition: all 100ms ease 0ms;
+            &:focus{
+                border: 1.5px solid $orange;
+            }
+        }
+        & select{
+            width: 360px;
+            height: 60px;
+            background: $primary;
+            font-size: 16px;
+            color: $secondary;
+            padding: 20px;
+            border: none;
+            outline: none;
+            transition: all 100ms ease 0ms;
+            box-shadow: 1px 1px 10px 10px #EAEAEA;
+            &:focus{
+                border: 1.5px solid $orange;
+            }
+        }
+    }
+}
+
+.card {
+    background-color: rgb(70, 70, 70);
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__cards-main {
+        display: flex;
+        flex: 1 1 33%;
+        box-shadow: inset 10px 10px 100px 100px #000;
+        justify-content: center;
+        align-items: center;
+        min-height: 900px;
+        min-width: 550px;
+        height: 100%;
+    }
+    &__title-main{
+        font-size: 64px;
+        font-weight: 900;
+    }
+}
+
+
+

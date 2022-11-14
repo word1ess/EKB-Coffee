@@ -1,0 +1,78 @@
+@import "_variable.scss";
+
+.footer {
+    min-width: 100%;
+    background: #000;
+    color: $primary;
+    padding: 62px 0 52px 0;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    &__logo {
+        position: relative;
+        width: 121px;
+    }
+
+    &__title{
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+        line-height: 25px;
+        &:last-child{
+            margin: 0px;
+        }
+    }
+
+    &__text{
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+        line-height: 25px;
+        &:last-child{
+            margin: 0px;
+        }
+    }
+
+    &__tel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__phone {
+        display: flex;
+        margin-bottom: 20px;
+        & img{
+            margin-right: 12px;
+        }
+    }
+
+    &__url {
+        margin-bottom: 42.5px;
+    }
+
+    &__url-text {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 20%;
+        gap: 20px;
+        max-width: 322px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__social {
+
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 140px;
+            font-size: 20px;
+        }
+    }
+}
+.block__text{
+    margin-bottom: 40px;
+}
